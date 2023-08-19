@@ -39,6 +39,10 @@ function M.setup()
         diffAdded    = { link = "DiffAdd" },
         diffRemoved  = { link = "DiffDelete" },
         diffChanged  = { link = "DiffChange" },
+        Pmenu        = { bg = p.windows, fg = p.normal }, -- Popup menu: normal item.
+        PmenuSel     = { bg = p.gray, fg = p.white }, -- Popup menu: selected item.
+        PmenuSbar    = { bg = p.gray, fg = p.gray_light }, -- Popup menu: scrollbar.
+        PmenuThumb   = { bg = p.white, fg = p.white }, -- Popup menu: Thumb of the scrollbar.
 
         -- SYNTAX BUILT-I N
         Normal            = { bg = p.background, fg = p.normal }, -- non-highlighted text and background
