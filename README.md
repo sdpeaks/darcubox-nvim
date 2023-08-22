@@ -1,6 +1,6 @@
 # darcubox
 
-A color scheme for Neovim inspired by Gruvbox and Darcula
+A color scheme for Neovim inspired by Gruvbox and Darcula written in Lua
 
 ![image](https://github.com/dotsilas/darcubox-nvim/assets/84829590/2bb7554f-d1ef-4e45-a2fe-530a0b6161e0)
 
