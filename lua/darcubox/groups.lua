@@ -13,21 +13,21 @@ function M.setup()
         CursorColumn      = { link = 'CursorLine' },
         ColorColumn       = { bg = p.background },
         Directory         = { fg = p.gray_light },
-        Conceal           = { fg = p.normal },
+        Conceal           = { fg = p.foreground },
         CursorLineNr      = { fg = p.white },
         ErrorMsg          = { fg = p.error },
         WinSeparator      = { link = 'VertSplit' },
         SignColumn        = { link = 'ColorColumn' },
-        IncSearch         = { fg = p.background, bg = p.yellow },
-        Substitute        = { fg = p.dark, bg = p.cream },
+        IncSearch         = { fg = p.background, bg = p.mustard },
+        Substitute        = { fg = p.gray_dark, bg = p.yellow },
         MatchParen        = { bg = p.purple },
-        MoreMsg           = { fg = p.blue },
+        MoreMsg           = { fg = p.sky },
         NonText           = { fg = p.background },
         NormalFloat       = { link = 'Normal' },
-        Search            = { bg = p.orange, fg = p.dark },
-        StatusLine        = { fg = p.gray_light , bg = p.dark }, --
+        Search            = { bg = p.orange, fg = p.gray_dark },
+        StatusLine        = { fg = p.gray_light , bg = p.gray_dark }, --
         TabLine           = { link = 'StatusLine' },
-        TabLineSel        = { fg = p.background, bg = p.normal },
+        TabLineSel        = { fg = p.background, bg = p.foreground },
         Title             = { fg = p.white },
         Visual            = { bg = p.gray },
         WarningMsg        = { fg = p.warning_bg },
@@ -35,35 +35,35 @@ function M.setup()
         DiffAdd      = { fg = p.green }, -- diff mode: Added line |diff.txt|
         DiffChange   = { fg = p.hint_bg }, -- diff mode: Changed line |diff.txt|
         DiffDelete   = { fg = p.red }, -- diff mode: Deleted line |diff.txt|
-        DiffText      = { fg = p.yellow },
+        DiffText      = { fg = p.mustard },
         diffAdded    = { link = "DiffAdd" },
         diffRemoved  = { link = "DiffDelete" },
         diffChanged  = { link = "DiffChange" },
-        Pmenu        = { bg = p.windows, fg = p.normal }, -- Popup menu: normal item.
+        Pmenu        = { bg = p.windows, fg = p.foreground }, -- Popup menu: normal item.
         PmenuSel     = { bg = p.gray, fg = p.white }, -- Popup menu: selected item.
         PmenuSbar    = { bg = p.gray, fg = p.gray_light }, -- Popup menu: scrollbar.
         PmenuThumb   = { bg = p.white, fg = p.white }, -- Popup menu: Thumb of the scrollbar.
 
         -- SYNTAX BUILT-I N
-        Normal            = { bg = p.background, fg = p.normal }, -- non-highlighted text and background
+        Normal            = { bg = p.background, fg = p.foreground }, -- non-highlighted text and background
         Comment           = { fg = p.gray_light }, -- comments
         Keyword           = { fg = p.orange },
         Conditional       = { link = 'Keyword' },
         Repeat            = { link = 'Keyword'},
         Constant          = { fg = p.green },
-        Function          = { fg = p.normal },
-        Identifier        = { fg = p.cream },
+        Function          = { fg = p.foreground },
+        Identifier        = { fg = p.yellow },
         Operator          = { fg = p.white },
         Parameter         = { fg = p.white },
         Delimiter         = { link = 'Parameter'},
-        Field             = { fg = p.cream },
+        Field             = { fg = p.yellow },
         Include           = { link = 'Keyword' },
-        Namespace         = { fg = p.blue },
+        Namespace         = { fg = p.sky },
         PreProc           = { link = 'Operator' },
-        Special           = { fg = p.normal },
-        Statement         = { fg = p.yellow },
+        Special           = { fg = p.foreground },
+        Statement         = { fg = p.mustard },
         String            = { link = 'Constant' },
-        Type              = { fg = p.blue },
+        Type              = { fg = p.sky },
         Typedef           = { fg = p.purple },
         Warn              = { fg = p.red },
     }
