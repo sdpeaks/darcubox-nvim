@@ -6,66 +6,70 @@ function M.setup()
 
     local groups = {
 
-        -- UI
-        LineNr            = { fg = p.gray }, -- line numbers
-        VertSplit         = { fg = p.gray }, -- space vertical divisions
-        CursorLine        = { bg = p.windows },
-        CursorColumn      = { link = 'CursorLine' },
-        ColorColumn       = { bg = p.background },
-        Directory         = { fg = p.gray_light },
-        Conceal           = { fg = p.foreground },
-        CursorLineNr      = { fg = p.white },
-        ErrorMsg          = { fg = p.error },
-        WinSeparator      = { link = 'VertSplit' },
-        SignColumn        = { link = 'ColorColumn' },
-        IncSearch         = { fg = p.background, bg = p.mustard },
-        Substitute        = { fg = p.gray_dark, bg = p.yellow },
-        MatchParen        = { bg = p.purple },
-        MoreMsg           = { fg = p.sky },
-        NonText           = { fg = p.background },
-        NormalFloat       = { link = 'Normal' },
-        Search            = { bg = p.orange, fg = p.gray_dark },
-        StatusLine        = { fg = p.gray_light , bg = p.gray_dark }, --
-        TabLine           = { link = 'StatusLine' },
-        TabLineSel        = { fg = p.background, bg = p.foreground },
-        Title             = { fg = p.white },
-        Visual            = { bg = p.gray },
-        WarningMsg        = { fg = p.warning_bg },
-        Whitespace        = { fg = p.windows },
-        DiffAdd      = { fg = p.green }, -- diff mode: Added line |diff.txt|
-        DiffChange   = { fg = p.hint_bg }, -- diff mode: Changed line |diff.txt|
-        DiffDelete   = { fg = p.red }, -- diff mode: Deleted line |diff.txt|
-        DiffText      = { fg = p.mustard },
-        diffAdded    = { link = "DiffAdd" },
-        diffRemoved  = { link = "DiffDelete" },
-        diffChanged  = { link = "DiffChange" },
-        Pmenu        = { bg = p.windows, fg = p.foreground }, -- Popup menu: normal item.
-        PmenuSel     = { bg = p.gray, fg = p.white }, -- Popup menu: selected item.
-        PmenuSbar    = { bg = p.gray, fg = p.gray_light }, -- Popup menu: scrollbar.
-        PmenuThumb   = { bg = p.white, fg = p.white }, -- Popup menu: Thumb of the scrollbar.
+        -- ui elements
+        Normal       = { bg = p.background, fg = p.foreground },
+        NormalFloat  = { link = 'Normal' },
+        LineNr       = { fg = p.gray },
+        VertSplit    = { fg = p.gray },
+        CursorLine   = { bg = p.windows },
+        CursorColumn = { link = 'CursorLine' },
+        ColorColumn  = { bg = p.background },
+        Directory    = { fg = p.gray_light },
+        CursorLineNr = { fg = p.white },
+        WinSeparator = { link = 'VertSplit' },
+        SignColumn   = { link = 'ColorColumn' },
+        TabLine      = { link = 'StatusLine' },
+        TabLineSel   = { fg = p.background, bg = p.foreground },
+        Title        = { fg = p.white },
+        StatusLine   = { fg = p.gray_light, bg = p.gray_dark },
+        Visual       = { bg = p.gray },
+        Conceal      = { fg = p.foreground },
+        IncSearch    = { fg = p.background, bg = p.mustard },
+        Substitute   = { fg = p.gray_dark, bg = p.yellow },
+        MatchParen   = { bg = p.purple },
+        NonText      = { fg = p.background },
+        Search       = { bg = p.orange, fg = p.gray_dark },
+        Whitespace   = { fg = p.windows },
+        Pmenu        = { bg = p.windows, fg = p.foreground },
+        PmenuSel     = { bg = p.gray, fg = p.white },
+        PmenuSbar    = { bg = p.gray, fg = p.gray_light },
+        PmenuThumb   = { bg = p.white, fg = p.white },
 
-        -- SYNTAX BUILT-I N
-        Normal            = { bg = p.background, fg = p.foreground }, -- non-highlighted text and background
-        Comment           = { fg = p.gray_light }, -- comments
-        Keyword           = { fg = p.orange },
-        Conditional       = { link = 'Keyword' },
-        Repeat            = { link = 'Keyword'},
-        Constant          = { fg = p.green },
-        Function          = { fg = p.foreground },
-        Identifier        = { fg = p.yellow },
-        Operator          = { fg = p.white },
-        Parameter         = { fg = p.white },
-        Delimiter         = { link = 'Parameter'},
-        Field             = { fg = p.yellow },
-        Include           = { link = 'Keyword' },
-        Namespace         = { fg = p.sky },
-        PreProc           = { link = 'Operator' },
-        Special           = { fg = p.foreground },
-        Statement         = { fg = p.mustard },
-        String            = { link = 'Constant' },
-        Type              = { fg = p.sky },
-        Typedef           = { fg = p.purple },
-        Warn              = { fg = p.red },
+        -- syntax
+        Comment      = { fg = p.gray_light },
+        Keyword      = { fg = p.orange },
+        Conditional  = { link = 'Keyword' },
+        Repeat       = { link = 'Keyword' },
+        Constant     = { fg = p.green },
+        Function     = { fg = p.foreground },
+        Identifier   = { fg = p.yellow },
+        Operator     = { fg = p.white },
+        Parameter    = { fg = p.white },
+        Delimiter    = { link = 'Parameter' },
+        Field        = { fg = p.yellow },
+        Include      = { link = 'Keyword' },
+        Namespace    = { fg = p.sky },
+        PreProc      = { link = 'Operator' },
+        Special      = { fg = p.foreground },
+        Statement    = { fg = p.mustard },
+        String       = { link = 'Constant' },
+        Type         = { fg = p.sky },
+        Typedef      = { fg = p.purple },
+        Warn         = { fg = p.red },
+
+        -- alerts
+        ErrorMsg     = { fg = p.error },
+        MoreMsg      = { fg = p.sky },
+        WarningMsg   = { fg = p.warning_bg },
+
+        -- git
+        DiffAdd      = { fg = p.green },
+        DiffChange   = { fg = p.hint_bg },
+        DiffDelete   = { fg = p.red },
+        DiffText     = { fg = p.mustard },
+        diffAdded    = { link = 'DiffAdd' },
+        diffRemoved  = { link = 'DiffDelete' },
+        diffChanged  = { link = 'DiffChange' },
     }
 
     for group, hl in pairs(config.overrides) do
