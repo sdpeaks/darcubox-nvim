@@ -2,7 +2,7 @@
 
 A color scheme for Neovim inspired by Gruvbox and Darcula written in Lua
 
-![image](https://github.com/dotsilas/darcubox-nvim/assets/84829590/2bb7554f-d1ef-4e45-a2fe-530a0b6161e0)
+![image](https://github.com/dotsilas/darcubox-nvim/assets/84829590/a7ccc199-5989-4e94-908c-2e666ec6017c)
 
 **Note: This is under development.**
 
