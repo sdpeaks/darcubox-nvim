@@ -25,7 +25,7 @@ Using [Lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ### Lua
 ```lua
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme darcubox]]
 ```
 
 ## Configuration
