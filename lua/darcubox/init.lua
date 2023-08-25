@@ -2,7 +2,7 @@ local M = {}
 
 local defaults = {
     options = {
-        -- transparent = false,
+        transparent = false,
         styles = {
             comments = {},
             functions = {},

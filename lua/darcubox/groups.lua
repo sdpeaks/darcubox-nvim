@@ -4,30 +4,32 @@ function M.setup()
     local config     = require("darcubox").config
     local p          = require("darcubox.palette").palette
 
+    local background = config.options.transparent and "NONE" or p.background
+
     local groups     = {
 
         -- ui elements
-        Normal       = { bg = p.background, fg = p.foreground },
+        Normal       = { bg = background, fg = p.foreground },
         NormalFloat  = { link = 'Normal' },
         LineNr       = { fg = p.gray },
         VertSplit    = { fg = p.gray },
         CursorLine   = { bg = p.windows },
         CursorColumn = { link = 'CursorLine' },
-        ColorColumn  = { bg = p.background },
+        ColorColumn  = { bg = background },
         Directory    = { fg = p.gray_light },
         CursorLineNr = { fg = p.white },
         WinSeparator = { link = 'VertSplit' },
         SignColumn   = { link = 'ColorColumn' },
         TabLine      = { link = 'StatusLine' },
-        TabLineSel   = { fg = p.background, bg = p.foreground },
+        TabLineSel   = { fg = p.gray_dark, bg = p.foreground },
         Title        = { fg = p.white },
         StatusLine   = { fg = p.gray_light, bg = p.gray_dark },
         Visual       = { bg = p.gray },
         Conceal      = { fg = p.foreground },
-        IncSearch    = { fg = p.background, bg = p.mustard },
+        IncSearch    = { fg = p.gray_dark, bg = p.mustard },
         Substitute   = { fg = p.gray_dark, bg = p.yellow },
         MatchParen   = { bg = p.purple },
-        NonText      = { fg = p.background },
+        NonText      = { fg = background },
         Search       = { bg = p.orange, fg = p.gray_dark },
         Whitespace   = { fg = p.windows },
         Pmenu        = { bg = p.windows, fg = p.foreground },
