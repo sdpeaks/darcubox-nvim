@@ -78,8 +78,7 @@ function M.setup()
     groups.Comment   = vim.tbl_extend("keep", groups.Comment, config.options.styles.comments)
     groups.Function  = vim.tbl_extend("keep", groups.Function, config.options.styles.functions)
     groups.Keyword   = vim.tbl_extend("keep", groups.Keyword, config.options.styles.keywords)
-    groups.Statement = vim.tbl_extend("keep", groups.Statement, config.options.styles.statement)
-    groups.Type      = vim.tbl_extend("keep", groups.Type, config.options.styles.type)
+    groups.Type      = vim.tbl_extend("keep", groups.Type, config.options.styles.types)
 
     for group, hl in pairs(config.overrides) do
         if groups[group] then
