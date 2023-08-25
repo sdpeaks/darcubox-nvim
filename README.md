@@ -21,6 +21,49 @@ Using [Lazy.nvim](https://github.com/folke/lazy.nvim):
 }
 ```
 
+## Usage
+
+### Lua
+```lua
+vim.cmd[[colorscheme tokyonight]]
+```
+
+## Configuration
+
+The default configuration for darcubox is as follows:
+
+```lua
+require('darcubox').setup({
+    options = {
+        transparent = false
+        styles = {
+            comments = {},
+            functions = {},
+            keywords = {},
+            types = {},
+    }
+})
+```
+
+You can change the background to transparent and the styles of `Comment`, `Function`, `Keyword` and `Type` syntax groups as follows:
+
+```lua
+require('darcubox').setup({
+    options = {
+        transparent = true
+        styles = {
+            comments = { italic = true }, -- italic
+            functions = { bold = true }, -- bold
+            keywords = { italic = true },
+            types = { italic = true, bold = true }, -- italics and bold
+    }
+})
+
+-- Set the configuration before loading the color scheme
+
+vim.cmd[[colorscheme darcubox]]
+```
+
 ## Licence
 
 [MIT](./LICENCE)
