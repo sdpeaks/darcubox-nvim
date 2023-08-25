@@ -1,10 +1,10 @@
 local M = {}
 
 function M.setup()
-    local config = require("darcubox").config
-    local p = require("darcubox.palette").palette
+    local config     = require("darcubox").config
+    local p          = require("darcubox.palette").palette
 
-    local groups = {
+    local groups     = {
 
         -- ui elements
         Normal       = { bg = p.background, fg = p.foreground },
@@ -71,6 +71,13 @@ function M.setup()
         diffRemoved  = { link = 'DiffDelete' },
         diffChanged  = { link = 'DiffChange' },
     }
+
+    -- apply userconfig
+    groups.Comment   = vim.tbl_extend("keep", groups.Comment, config.options.styles.comments)
+    groups.Function  = vim.tbl_extend("keep", groups.Function, config.options.styles.functions)
+    groups.Keyword   = vim.tbl_extend("keep", groups.Keyword, config.options.styles.keywords)
+    groups.Statement = vim.tbl_extend("keep", groups.Statement, config.options.styles.statement)
+    groups.Type      = vim.tbl_extend("keep", groups.Type, config.options.styles.type)
 
     for group, hl in pairs(config.overrides) do
         if groups[group] then

@@ -1,7 +1,8 @@
 local M = {}
 
 M.palette = {
-    background = "#0e1214",
+    -- background = "#0e1214",
+    background = "NONE",
     gray_dark = "#16181c", --
     gray = "#404146",
     gray_light = "#8f8682",

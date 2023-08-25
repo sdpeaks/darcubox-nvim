@@ -1,8 +1,20 @@
 local M = {}
 
-M.config = {
+local defaults = {
+    options = {
+        -- transparent = false,
+        styles = {
+            comments = {},
+            functions = {},
+            keywords = {},
+            statement = {},
+            type = {},
+        },
+    },
     overrides = {},
 }
+
+M.config = defaults
 
 function M.setup(config)
     M.config = vim.tbl_deep_extend("force", M.config, config or {})
@@ -26,6 +38,9 @@ function M.load()
 
     -- add highlights
     for group, settings in pairs(groups) do
+        -- if M.config.options.transparent then
+        --     settings.bg = "NONE" -- Aplica la transparencia del fondo
+        -- end
         vim.api.nvim_set_hl(0, group, settings)
     end
 end
