@@ -42,6 +42,7 @@ require('darcubox').setup({
             functions = {},
             keywords = {},
             types = {},
+        }
     }
 })
 ```
@@ -57,6 +58,7 @@ require('darcubox').setup({
             functions = { bold = true }, -- bold
             keywords = { italic = true },
             types = { italic = true, bold = true }, -- italics and bold
+        }
     }
 })
 
