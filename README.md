@@ -67,6 +67,16 @@ require('darcubox').setup({
 vim.cmd[[colorscheme darcubox]]
 ```
 
+## Thanks to:
+
+### Palette inspiration
+- [Gruvbox](https://github.com/morhetz/gruvbox)
+- [Darcula](https://github.com/bulenkov/Darcula)
+
+### Template ideas
+- [Material](https://github.com/marko-cerovac/material.nvim)
+- [Tokio Night](https://github.com/folke/tokyonight.nvim)
+
 ## Licence
 
 [MIT](./LICENCE)
