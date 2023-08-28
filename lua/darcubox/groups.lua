@@ -36,6 +36,9 @@ function M.setup()
         menuSel            = { bg = p.surface2, fg = p.alabaster },
         PmenuSbar          = { bg = p.surface2, fg = p.silver },
         PmenuThumb         = { bg = p.white, fg = p.alabaster },
+        Number             = { fg = p.lime },
+        Float              = { link = "Number" },
+        Boolean            = { link = "Number" },
 
         -- syntax
         Comment            = { fg = p.silver },
@@ -73,11 +76,11 @@ function M.setup()
         diffRemoved        = { link = 'DiffDelete' },
         diffChanged        = { link = 'DiffChange' },
 
-        ["@tag"]           = { fg = p. gold },                   -- Tags like html tag names.
-        ["@tag.attribute"] = { fg = p.sand }, -- Tags like html tag names.
-        ["@tag.delimiter"] = { fg = p.gold },      -- Tag delimiter like < > /
-        ["@constructor"] = { fg = p.gold },      -- Tag delimiter like < > /
-        ["@property"] = { fg = p.gold },      -- Tag delimiter like < > /
+        ["@tag"]           = { fg = p.gold },  -- Tags like html tag names.
+        ["@tag.attribute"] = { fg = p.sand },  -- Tags like html tag names.
+        ["@tag.delimiter"] = { fg = p.gold },  -- Tag delimiter like < > /
+        ["@constructor"]   = { fg = p.gold },  -- Tag delimiter like < > /
+        ["@property"]      = { fg = p.gold },  -- Tag delimiter like < > /
     }
 
     -- apply userconfig
