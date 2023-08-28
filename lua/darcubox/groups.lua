@@ -28,7 +28,7 @@ function M.setup()
         Conceal            = { fg = p.foreground },
         IncSearch          = { fg = p.black, bg = p.gold },
         Substitute         = { fg = p.black, bg = p.sunshine },
-        MatchParen         = { bg = p.gold },
+        MatchParen         = { bg = p.gold, fg = p.black },
         NonText            = { fg = background },
         Search             = { bg = p.ember, fg = p.black },
         Whitespace         = { fg = p.surface1 },
