@@ -1,24 +1,29 @@
 local M = {}
 
 M.palette = {
+    -- UI
+    contrast = "#0a0d0f",
     background = "#0e1214",
-    gray_dark = "#16181c", --
-    gray = "#404146",
-    gray_light = "#8f8682",
-    foreground = "#d0c6a5", --
-    white = "#ffffff",
-    mustard = "#ee952d", --
-    yellow = "#ffd072", --
-    red = "#d61522",
-    orange = "#dd4e21",
-    blue = "#204474", --
-    sky =  "#0f829d", --
-    green = "#52a260",
-    lemon = "#9cd750",
-    purple = "#8f3f71",
-    lilac = "#cd80b9",
+    surface1 = "#25262c",
+    surface2  = "#404146",
+    foreground = "#d0c6a5",
 
-    windows = "#25262c",
+    -- Syntax
+    black = "#16181c",
+    sunshine = "#ffd072",
+    gold = "#fb982e",
+    ember = "#dd4e21",
+    sand = "#e6a96b",
+    meadow = "#52a260",
+    lime = "#9cd750",
+    sapphire = "#0f829d",
+    crimson = "#d01c26",
+    lilac = "#cd80b9",
+    silver = "#8f8682",
+    alabaster = "#efead9",
+
+    -- TODO:
+    -- diff, git and diagnostic colors
 
     error = "#eb5f6a",
     plus = "#5a9f81",
