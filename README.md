@@ -6,9 +6,11 @@ A color scheme for Neovim inspired by Gruvbox and Darcula written in Lua
 
 **Note: This is under development.**
 
-Hello! Thanks for checking out my project. I'm working on it solo, so there might be some rough edges.
-If you encounter problems or have ideas, please open an issue. Your input is valuable in improving the project.
-Thanks for your interest!
+Hello! Thanks for checking out Darcubox.
+
+The project's goal is to create a high-contrast colorscheme(s) for Neovim (and other tools) that has beautiful defaults but is also customizable.
+
+If you encounter issues or have ideas, please open an issue or send a pull request!
 
 ## Instalation
 
